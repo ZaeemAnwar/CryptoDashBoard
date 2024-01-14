@@ -36,10 +36,14 @@ export const Dashboard = () => {
       } else {
         foundOffering = cryptoListingData?.data
       }
-      // console.log("Data found, ", foundOffering)
       setPageSize(10)
+     
       const start = (activePage - 1) * pageSize;
       const end = activePage * pageSize;
+
+      // Force reset the page if a search has less results than current view page.
+      if(activePage*pageSize>end){setPage(1)}
+      
       const newChunk = foundOffering.slice(start, end);
       // console.log("Cuirrent chunk ", newChunk)
       setChunk(newChunk);
@@ -53,6 +57,7 @@ export const Dashboard = () => {
       setFiltered(cryptoListingData.data)
     }
     if(search.length>0 && cryptoListingData){
+      setPage(1)
       let foundOffering = cryptoListingData.data
       const filteredData = foundOffering.filter((dat: { name: string; }) => {
         
@@ -80,6 +85,7 @@ export const Dashboard = () => {
 
   return (
     <div className='container'>
+          <h1>Crypto Dashboard</h1>
           <SearchBarContainer search={search} setSearch={setSearch} />
           <LayoutChart activePage={activePage} data={chunk} />
           <LayoutPaginator
