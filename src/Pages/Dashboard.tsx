@@ -62,7 +62,6 @@ export const Dashboard = () => {
       const filteredData = foundOffering.filter((dat: { name: string; }) => {
         
        const match = dat.name.toLowerCase().includes(search.toLowerCase());
-       console.log(match);
        return match
       });
       console.log(filteredData)
@@ -76,12 +75,14 @@ export const Dashboard = () => {
 
   
   if (isError) {
-    return <h1> There seems to be a problem retreiving data. Probably check the network requests to see if the server is down or misconfigured.</h1>;
-  }
+    return (<div><h1> Server Error </h1>
+    There seems to be a problem retreiving data. Probably check the network requests to see if the server is down or misconfigured.)
+    </div>)
+  };
 
   if (isLoading) {
-    return <h1>Fetching Crypto Information from backend.... hold tight!</h1>;
-  }
+    return (<div><h1>Initializing </h1>Fetching Crypto Information from backend.... hold tight!</div>)
+  };
 
   return (
     <div className='container'>

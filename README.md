@@ -17,7 +17,7 @@ You will also see any lint errors in the console.
 Note: This project assumes you have the corresponding Node Server Running: 
 https://github.com/ZaeemAnwar/CryptoBackEnd
 
-It will look for locaholst:5001 to be hosting the back end APIs it needs to gather the data it requires. 
+It will look for localhost:5001 to be hosting the back end APIs it needs to gather the data it requires. 
 
 ### `npm test`
 
