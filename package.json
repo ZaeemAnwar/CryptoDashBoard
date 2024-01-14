@@ -4,6 +4,11 @@
   "private": true,
   "proxy": "http://localhost:5001",
   "dependencies": {
+    "@mantine/charts": "^7.4.1",
+    "@mantine/core": "^7.4.1",
+    "@mantine/hooks": "^7.4.1",
+    "@tabler/icons": "^2.46.0",
+    "@tabler/icons-react": "^2.46.0",
     "@tanstack/react-query": "^5.17.10",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
