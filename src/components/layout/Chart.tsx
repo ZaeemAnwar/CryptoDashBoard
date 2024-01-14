@@ -1,5 +1,5 @@
-import React from 'react';
 import { Table } from '@mantine/core';
+import { IconStar } from '@tabler/icons-react';
 import { CoinMarketType } from '../../types';
 import { DataChange } from '..';
 
@@ -35,6 +35,9 @@ export default function Chart({ activePage, data }: Props) {
         </Table.Td>
         <Table.Td>{element.num_market_pairs}</Table.Td>
         <Table.Td>{element.num_market_pairs}</Table.Td>
+        <Table.Td>
+          <IconStar color='var(--orange)' />
+        </Table.Td>
       </Table.Tr>
     ))
   ) : (

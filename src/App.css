@@ -43,3 +43,19 @@ td {
   padding: 10px;
   text-align: left;
 }
+
+.search-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container .search-input {
+  flex-grow: 1;
+  background: orange;
+}
+
+.search-container button.watchlist {
+  margin: 10px;
+}

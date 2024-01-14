@@ -9,7 +9,12 @@ interface Props {
 
 function Paginator({ activePage, setPage, total }: Props) {
   return (
-    <Pagination total={total} value={activePage} onChange={setPage} mt='sm' />
+    <Pagination
+    total={total}
+    value={activePage}
+    onChange={setPage}
+    mt='sm'
+  />
   );
 }
 export default Paginator;
