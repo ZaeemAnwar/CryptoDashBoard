@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Note: This project assumes you have the corresponding Node Server Running: 
+https://github.com/ZaeemAnwar/CryptoBackEnd
+
+It will look for localhost:5001 to be hosting the back end APIs it needs to gather the data it requires. 
+
+## Resources Used
+https://www.youtube.com/watch?v=w3vs4a03y3I (Verifying I was able to work around the CORS issue with the crypto API key security limitation)
+https://youtube.com/watch?v=1fgRc1lYIEU&t (Ended up giving up on the MobX integration but did want to acknowledge the time spent reading up on it)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -14,10 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-Note: This project assumes you have the corresponding Node Server Running: 
-https://github.com/ZaeemAnwar/CryptoBackEnd
 
-It will look for localhost:5001 to be hosting the back end APIs it needs to gather the data it requires. 
 
 ### `npm test`
 
